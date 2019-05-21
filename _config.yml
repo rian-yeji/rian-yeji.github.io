@@ -11,12 +11,12 @@ exclude:
 remote_theme : bencentra/centrarium
 
 # Site settings
-title: Centrarium
-subtitle: "A simple yet classy theme for your Jekyll website or blog"
-email: blcentra@gmail.com
-name: Ben Centra
+title: Yeji's Blog
+subtitle: "Nice to meet you. I'm a study developer. This is a space for organizing what I studied."
+email: lwj1748@naver.com
+name: Lee YeJi
 description: >
-  A simple yet classy theme for your Jekyll website or blog.
+  Nice to meet you. I'm a study developer. This is a space for organizing what I studied.
 # Base URL of site (i.e. /blog). It should always start with a slash,
 # and never end with a slash. Set it to a blank value if hosting at the
 # root of your server.
@@ -88,8 +88,8 @@ social:
 
   - name: GitHub
     icon: github
-    username: bencentra
-    url: https://github.com/bencentra
+    username: rian-yeji
+    url: https://github.com/rian-yeji
     desc: Fork me on GitHub
     share: false
 
