@@ -64,7 +64,7 @@ kafka에 기록된 데이터를 기존 응용 프로그램 또는 DB에 연결�
 <br>
 <b> ></b>
 <br>
-<b> > -server-start.bat ../../config/zookeeper.properties</b>
+<b> > zookeeper-server-start.bat ../../config/zookeeper.properties</b>
 <br>
 <img src="/image/kafka_post/zookeeper_execute.PNG" width="700px" height="200px">
 <br><br>
