@@ -1,4 +1,4 @@
 <Posting List>
--Lombok
 -MSA
 -React
+-OAuth
