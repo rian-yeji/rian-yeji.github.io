@@ -206,6 +206,18 @@ pre code.hljs {
 		padding-top: 1em !important;
 		@extend %default-ul;
 	}
+	.post-title{
+		overflow: hidden;
+	}
+	.post-title > .post-link{
+		font-size: 26px;
+		text-decoration: none;
+	}
+	@media only screen and (min-width: 768px) {   
+		.post-title > .post-link {
+			font-size: 30px;
+		}
+	}
 	.post-meta {
 		@include outer-container;
 		// padding: 1em 0;
@@ -262,6 +274,17 @@ pre code.hljs {
 		.post-header-container {
 			.scrim {
 				padding: 2em 1em 1em 1em;
+				.post-header{
+					.title{
+							font-size: 26px;
+							overflow: visible;			
+					}
+					@media only screen and (min-width: 768px) {   
+						.title {
+							font-size: 30px;
+						}
+					}
+				}
 			}
 		}
 		.post-meta {
@@ -325,6 +348,7 @@ pre code.hljs {
 		.post-header {
 			padding: 0.5em 1em 1em 1em;
 			text-align: center;
+			overflow: hidden;
 		}
 		.posts-list {
 			@extend %default-ul;

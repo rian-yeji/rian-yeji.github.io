@@ -6,6 +6,8 @@ author: Lee YeJi
 categories: Spring
 tags: Spring Lombok
 ---
+## 제목
+
 <b><Why? Lombok을 사용하는가></b>
 
 Java프로그래밍을 어느정도 해본사람들은 Model에 Getter/Setter, toString함수 등을 만들어본 경험이 있을것이다. 프로그램의 규모가 커질수록 이 작업은 매우 귀찮은 일인데 Eclipse나 IntelliJ와 같은 IDE tool에서는 Generate라는 기능으로 자동완성을 할 수 있게 지원하기도 한다.

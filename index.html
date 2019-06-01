@@ -16,9 +16,9 @@ layout: default
 <ul class="post-list">
   {% for post in paginator.posts %}
   <li>
-    <h2>
+    <div class="post-title">
       <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-    </h2>
+    </div>
     <section class="post-excerpt" itemprop="description">
       <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
     </section>
