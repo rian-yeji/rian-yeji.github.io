@@ -79,6 +79,7 @@ pre code.hljs {
 		background-size: cover;
 		.title {
 			font-size: modular-scale(6);
+			overflow: hidden;
 		}
 		.subtitle, .info {
 			font-size: modular-scale(1);
