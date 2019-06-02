@@ -60,38 +60,42 @@ kafka에 기록된 데이터를 기존 응용 프로그램 또는 DB에 연결�
 <p>설치가 간편했던 것에 비해 실행은 과정이 조금 많은데, Apache Kafka는 zookeeper라고 하는 오픈소스 분산형 구성 서비스 위에서 돌아 가기 때문에 zookeeper를 먼저 실행 해 주어야 한다.</p>
 
 <h6>#Zookeeper 실행</h6>
-<b> > cd kafka압축해제경로\bin\windows</b>
-<br>
-<b> ></b>
-<br>
-<b> > zookeeper-server-start.bat ../../config/zookeeper.properties</b>
-<br>
+{% highlight PowerShell %}
+cd kafka압축해제경로\bin\windows
+zookeeper-server-start.bat ../../config/zookeeper.properties
+{% endhighlight %}
 <img src="/image/kafka_post/zookeeper_execute.PNG" width="700px" height="200px">
 <br><br>
 
 그리고 새로운 cmd창을 열어서 kafka server를 실행한다.
 
 <h6>#Kafka server 실행</h6>
-<b> > cd kafka압축해제경로\bin\windows</b>
-<br>
-<b> ></b>
-<br>
-<b> > kafka-server-start.bat ..\..\config\server.properties</b>
+{% highlight PowerShell %}
+cd kafka압축해제경로\bin\windows
+kafka-server-start.bat ../../config/server.properties
+{% endhighlight %}
 <img src="/image/kafka_post/kafka_server.PNG" width="700px" height="200px">
 <br>
 
 <h6>#Topic 생성</h6>
-<b> > kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic [토픽명]</b>
+{% highlight PowerShell %}
+kafka-topics.bat --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic [토픽명]
+{% endhighlight %}
 
 <h6>#Topic list 확인</h6>
-<b> > kafka-topics.bat --list --zookeeper localhost:2181</b>
+{% highlight PowerShell %}
+kafka-topics.bat --list --zookeeper localhost:2181
+{% endhighlight %}
 
 <h6>#Consumer</h6>
-<b> > kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic [토픽명]</b>
+{% highlight PowerShell %}
+kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic [토픽명]
+{% endhighlight %}
 
 <h6>#Producer</h6>
-<b> > bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic [토픽명]
-</b>
+{% highlight PowerShell %}
+bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic [토픽명]
+{% endhighlight %}
 
 
 [kafka_apis_url]: https://kafka.apache.org/intro
