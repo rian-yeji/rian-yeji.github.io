@@ -5,6 +5,7 @@ date:   2019-05-20 22:30:45
 author: Lee YeJi
 categories: Spring
 tags: Spring Lombok
+comments: true
 ---
 ## 제목
 

@@ -5,6 +5,7 @@ date:   2019-06-01 08:43:59
 author: Lee YeJi
 categories: Tools
 tags: VSCode Tools Tips
+comments: true
 ---
 React나 F/E프로그래밍을 할 때 많이 사용하는 Visual Studio Code의 자주 쓰는 단축키를 알아보자.
 

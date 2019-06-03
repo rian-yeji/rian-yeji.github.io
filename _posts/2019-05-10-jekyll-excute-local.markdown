@@ -5,6 +5,7 @@ date:   2019-05-09 20:45:45
 author: Lee YeJi
 categories: Jekyll
 tags: Jekyll
+comments: true
 ---
 요즘 개발자들 사이에서 git블로그가 유행함에 따라 보다 간편하게 블로그 작성을 할 수 있도록 로컬에서 작업하는 방법을 설명한다. 
 

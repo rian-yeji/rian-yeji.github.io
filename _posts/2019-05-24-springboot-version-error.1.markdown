@@ -7,6 +7,7 @@ date:   2019-05-28 08:43:59
 author: Lee YeJi
 categories: ResolvedError
 tags: Spring
+comments: true
 ---
 
 <a href="#solution" text-decoration:none >☆해결방법 바로가기☆</a>

@@ -5,6 +5,7 @@ date:   2019-05-16 19:30:00
 author: Lee YeJi
 categories: Kafka
 tags: Kafka
+comments: true
 ---
 이번년도 3월부터 한이음멘토링을 진행하며 화상회의 프로그램 개발을 주제로 잡았는데 그 중 채팅기능을 구현할때 보다 높은 성능을 위해 Apache Kafka를 적용해보기로 했고 이에따라 처음 카프카 시작하기위한 설치과정과 cmd로 실행하여 consumer와 producer가 메시지를 주고받는 기능까지 실습해보았다.
 <hr>
