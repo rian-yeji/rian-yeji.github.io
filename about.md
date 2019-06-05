@@ -16,16 +16,16 @@ permalink: /about/
     <th></th><th>프로젝트에 적용</th><th>이론 및 실습</th>
   </tr>
   <tr>
-    <td>Language</td><td>Java, Spring, JSP, React</td><td>Python, C, C++</td>
+    <td>Language</td><td>Java, Javascript, JSP</td><td>Python, C, C++</td>
   </tr>
   <tr class="even">
-    <td>DB</td><td>MySQL</td><td>Oracle</td>
+    <td>Framework</td><td>Spring,Spring Boot, React, MSA, Redis, Kafka</td><td> </td>
   </tr>
   <tr>
-    <td>Dev Tools</td><td>Eclipse, IntelliJ, GitKraken, Visual Studio Code, Android Studio</td><td>Visual Studio, Atom</td>
+    <td>DB</td><td>MySQL</td><td>Oracle</td>
   </tr>
   <tr class="even">
-    <td>Business Tools</td><td>Slack, Trello</td><td></td>
+    <td>Business Tools</td><td>Trello</td><td> </td>
   </tr>
 </table>
 <li><b>Github: <a href="https://github.com/rian-yeji">https://github.com/rian-yeji</a></b></li>
