@@ -5,7 +5,7 @@ javax.servlet.http.HttpServletRequest.
 getHttpServletMapping()Ljavax/servlet/http/HttpServletMapping;"
 date:   2019-05-28 08:43:59
 author: Lee YeJi
-categories: ResolvedError
+categories: ResolvedError Spring
 tags: Spring
 comments: true
 ---
