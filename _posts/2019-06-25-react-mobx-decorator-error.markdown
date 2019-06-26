@@ -37,7 +37,7 @@ yarn add @babel/plugin-proposal-class-properties @babel/plugin-proposal-decorato
 ## yarn eject
 다음과 같이 command창에 yarn eject를 입력하고 실행하면 정말 eject할것인지 물어보는 부분이 나온다. 거기서 Y를 입력하면 eject가 실행되는데 이 때 아래와 같은 에러가 발생할 수 있다.
 
-<img src = "/image/Error/react_mobx_decorator_error/eject_error.PNG">
+<img src = "/image/Error/react_mobx_decorator_error/eject_error.png">
 
 이는 git commit을 하고 다시 eject하면 해결된다.
 
@@ -48,13 +48,13 @@ git commit을 하는 방법은 여러가지인데 벨로퍼트님이 책에 써�
 <h1 id="second">2. decorator 사용 시 코드에 빨간줄</h1>
 1번의 과정을 하고 서버를 start 시키면 제대로 작동하는데 decorator를 사용한 부분에 빨간줄이 뜰 수 있다. 이는 오류는 아니고 warning의 일종인데 VSCode의 설정때문에 나타나는 문제이다. 
 
-<img src = "/image/Error/react_mobx_decorator_error/vscode_setting_error.PNG" >
+<img src = "/image/Error/react_mobx_decorator_error/vscode_setting_error.png" >
 
 빨간줄이 뜨는 부분에 커서를 가져가면 다음과 같이 experimentaldecorators설정을 바꾸면 해결된다고 뜨는데 시키는 대로 하면 된다.
 
 왼쪽 상단의 `파일>기본설정>설정`에서 experimentaldecorators를 검색하면 체크박스가 비어있는것을 볼 수 있는데 이부분을 체크하면 바뀐 설정이 적용되며 빨간줄이 사라지는 것을 볼 수 있다.
 
-<img src = "/image/Error/react_mobx_decorator_error/vscode_setting_error2.PNG">
+<img src = "/image/Error/react_mobx_decorator_error/vscode_setting_error2.png">
 
 
 <h1 id="third">3. Cannot find module @babel~</h1>
@@ -66,7 +66,7 @@ git commit을 하는 방법은 여러가지인데 벨로퍼트님이 책에 써�
 
 `Module build failed: Error: Cannot find module '@babel/plugin-transform-react-jsx-source'`
 
-<img src = "/image/Error/react_mobx_decorator_error/babel_error.PNG">
+<img src = "/image/Error/react_mobx_decorator_error/babel_error.png">
 
 위와 같이 @babel~등의 모듈을 못찾는다는 오류가 날 수 있는데 이 오류는 해당 프로젝트의 src아래의 node_modules 디렉터리를 삭제하고 <b>yarn install</b>로 다시 설치 하면 해결됩니다.
 
