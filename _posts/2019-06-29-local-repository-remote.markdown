@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "local에서 작업한 저장소 Github에 올리기"
+title:  "local에서 작업한 저장소 Github에 올리기(GitKraken)"
 date:   2019-06-29 08:43:59
 author: Lee YeJi
-categories: Git
+categories: Git Tools
 tags: Git GitKraken
 comments: true
 ---
