@@ -60,10 +60,13 @@ descriptions:
     desc: "Posts describing Apache Kafka."
 
   - cat: Tools
-    desc: "Posts describing Apache Jekyll."
+    desc: "Posts describing development tools."
 
   - cat: React
-    desc: "Posts describing development tools."
+    desc: "Posts describing React."
+
+  - cat: Git
+  desc: "Posts describing Git."
 
   - cat: Unreslovederror
     desc: "Posts describing errors that have been unresolved during the experience."
