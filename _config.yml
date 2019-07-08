@@ -66,7 +66,7 @@ descriptions:
     desc: "Posts describing React."
 
   - cat: Git
-  desc: "Posts describing Git."
+    desc: "Posts describing Git."
 
   - cat: Unreslovederror
     desc: "Posts describing errors that have been unresolved during the experience."
