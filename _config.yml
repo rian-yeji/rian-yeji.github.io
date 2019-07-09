@@ -68,6 +68,9 @@ descriptions:
   - cat: Git
     desc: "Posts describing Git."
 
+  - cat: Algorithm
+    desc: "Posts describing Algorithm."
+
   - cat: Unreslovederror
     desc: "Posts describing errors that have been unresolved during the experience."
 
