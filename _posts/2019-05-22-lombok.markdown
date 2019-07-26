@@ -7,7 +7,7 @@ categories: Spring
 tags: Spring Lombok
 comments: true
 ---
-## 제목
+# Lombok
 
 <b><Why? Lombok을 사용하는가></b>
 
@@ -17,7 +17,7 @@ Java프로그래밍을 어느정도 해본사람들은 Model에 Getter/Setter, t
 
 이런 경우 굉장히 유용하게 사용할 수 있는 <b>Lombok</b> 라이브러리를 소개한다.
 <hr>
-[목차]
+<b>[목차]</b>
 <br>
 <a href="#first" text-decoration:none ><b>1. Eclipse 설정</b></a>
 <br>
@@ -34,7 +34,7 @@ Java프로그래밍을 어느정도 해본사람들은 Model에 Getter/Setter, t
 <li><a href="#third-seven" text-decoration:none >3.7 Etc</a></li>
 </ul>
 
-<h3 id="first">1. Eclipse 설정</h3>
+<h2 id="first">1. Eclipse 설정</h2>
 
 Eclipse에서 사용할 경우 [공식홈페이지][lombok_download]에서 jar파일을 다운받아서 실행하고 이클립스가 위치한 경로로 지정한 후 설치한다.
 <img src="/image/lombok_post/lombok_download.png">
@@ -48,7 +48,7 @@ maven 환경에서 dependency를 가져오기 위해서는 `pom.xml`에 다음�
 {% endhighlight %}
 <br>
 
-<h3 id="second">2. IntelliJ 설정</h3>
+<h2 id="second">2. IntelliJ 설정</h2>
 
 IntelliJ에서의 설치는 Eclipse와는 조금 다르다.
 위에서 했던 jar파일의 별도 설치없이 프로젝트 생성시 dependency목록에 Lombok을 추가하면 자동으로 추가된다.
@@ -59,12 +59,12 @@ IntelliJ에서의 설치는 Eclipse와는 조금 다르다.
 <img src="/image/lombok_post/lombok_intelliJ.png">
 <br>
 
-<h3 id="third">3. Annotation</h3>
+<h2 id="third">3. Annotation</h2>
 위의 설정을 완료했다면 사용법은 동일하다. 코드상에서 필요한 어노테이션을 달아주기만 하면 된다.
 
 자주 쓰이는 어노테이션들은 다음과 같다.
 
-<h4 id="third-one">3.1 @Getter, @Setter</h4>
+<h3 id="third-one">3.1 @Getter, @Setter</h3>
 간단한 프로그램 작성 시 가장 많이 쓰이게 될 어노테이션이다. 원하는 필드에 선언하면 자동으로 get~(boolean타입이라면 is~)/set~함수를 만들어준다. 
 
 <b>< Lombok Code ></b>
@@ -88,7 +88,7 @@ IntelliJ에서의 설치는 Eclipse와는 조금 다르다.
 또한, 필드 레벨이 아닌 클래스 레벨에 @Getter, @Setter를 선언해줄 경우, 클래스 내부의 모든 필드에 접근자와 설정자가 자동으로 생성된다.
 <br>
 
-<h4 id="third-two">3.2 @ToString</h4>
+<h3 id="third-two">3.2 @ToString</h3>
 `@ToString`도 @Getter, @Setter같이 필드 레벨, 클래스 레벨에 선언할 수 있다. 만약 클래스 레벨에 선언할 때 toString함수를 만들고 싶지 않은 필드가 있다면 다음과 같이 exclude속성을 사용하여 제외하는것도 가능하다.
 
 <b>< Lombok Code ></b>
@@ -133,7 +133,7 @@ User(id=1, username=12345)
 {% endhighlight %}
 <br>
 
-<h4 id="third-three">3.3 @NonNull</h4>
+<h3 id="third-three">3.3 @NonNull</h3>
 `@NonNull`은 클래스 레벨에서는 사용이 불가능하며, 클래스 내의 필요한 필드에 직접 사용해야 한다. @NonNull을 사용하면 @Setter로 생성되는 setter 메서드에 전달되는 parameter에 @NonNull이 붙게 된다.
 하지만 해당 setter 메서드에 null을 넘기도록 코드를 작성 할 수도 있다. 컴파일 시점에 적용되지 않고 runtime시에 Null Check를 하여 Exception이 발생하도록 하는 것이다.
 @NonNull을 멤버 변수에 붙인 경우에는 그 필드를 꼭 받도록 생성자가 수정된다.
@@ -163,13 +163,15 @@ public void setMembers(@NonNull final List<Person> members) {
 {% endhighlight %}
 <br>
 
-<h4 id="third-four">3.4 생성자 자동 생성</h4>
+<h3 id="third-four">3.4 생성자 자동 생성</h3>
 `@NoArgsConstructor`: parameter가 없는 기본 생성자를 생성 <br>
+
 `@AllArgsConstructor`: 모든 필드 값을 parameter로 받는 생성자를 생성 <br>
+
 `@RequiredArgsConstructor`: final이나 @NonNull인 필드 값만 parameter로 받는 생성자를 생성 <br>
 <br>
 
-<h4 id="third-five">3.5 @EqualsAndHashCode</h4>
+<h3 id="third-five">3.5 @EqualsAndHashCode</h3>
 `@EqualsAndHashCode`은 코드에서 객체 비교 등의 용도로 사용되는 equals(), hashCode() 메소드의 코드를 생성해준다. `@toString`과 마찬가지로 exclude속성을 통해 특정 필드를 제외할 수도 있다.
 
 <b>< Lombok Code ></b>
@@ -230,16 +232,18 @@ public class Person extends SentientBeing {
 {% endhighlight %}
 <br>
 
-<h4 id="third-six">3.6 @Data ☆☆☆☆☆</h4>
+<h3 id="third-six">3.6 @Data ☆☆☆☆☆</h3>
 `@Data`는 위에서 설명한 @Getter, @Setter, @RequiredArgsConstructor, @ToString, @EqualsAndHashCode을 한꺼번에 설정해주는 매우 유용한 어노테이션이다. 가장 기본적인 기능들을 모두 포함하고 있어서 @Data한개만 쓰는 경우도 굉장히 많다. 
 <br>
 
-<h4 id="third-seven">3.7 Etc</h4>
+<h3 id="third-seven">3.7 Etc</h3>
 위에 언급한 6가지 이외에도 `@Value`, `@Synchronized`, `@Builder`, `@Log`등 유용하고 편리한 기능들이 있으므로 추가적으로 더 공부해보는것을 추천한다.
 
 
 [참고 사이트]
+
 <a href="https://ijbgo.tistory.com/6">https://ijbgo.tistory.com/6</a>
+
 <a href="https://projectlombok.org/features/">https://projectlombok.org/features/</a>
 
 [lombok_download]: https://projectlombok.org/download
