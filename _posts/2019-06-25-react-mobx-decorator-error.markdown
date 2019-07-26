@@ -23,7 +23,7 @@ comments: true
 <br>
 
 <h1 id="first">1. decorator 추가 후 bulid 오류</h1>
-decorator를 사용하려면 babel을 수정해주어야 하는데 velopert님 블로그를 따라하다보면 "babel 설정을 커스터마이징 하려면 yarn eject 를 해야합니다."라는 말이 있고 다음과 같은 설치 명령어를 알려주고 package.json파일을 수정하는 법이 나와있다.
+decorator를 사용하려면 babel을 수정해주어야 하는데 velopert님 블로그를 따라하다보면 <b>"babel 설정을 커스터마이징 하려면 yarn eject 를 해야합니다."</b>라는 말이 있고 다음과 같은 설치 명령어를 알려주고 package.json파일을 수정하는 법이 나와있다.
 {% highlight PowerShell %}
 yarn add @babel/plugin-proposal-class-properties @babel/plugin-proposal-decorators
 {% endhighlight %}
@@ -44,15 +44,16 @@ yarn add @babel/plugin-proposal-class-properties @babel/plugin-proposal-decorato
 git commit을 하는 방법은 여러가지인데 벨로퍼트님이 책에 써놓으신 방법으로 해보려면 [https://liante0904.tistory.com/176](https://liante0904.tistory.com/176)를 참고하면 된다.
 
 그런데 나는 위 포스팅대로 했을때 react-scripts 를 삭제하면서 생기는것 같은 문제들이 있어서 그냥 평소에 사용하던 GitKraken으로 로컬에 commit해주었다.
+(Github에 올리는 것과 상관없이 로컬에만 해주면 됩니다!)
 
 <h1 id="second">2. decorator 사용 시 코드에 빨간줄</h1>
 1번의 과정을 하고 서버를 start 시키면 제대로 작동하는데 decorator를 사용한 부분에 빨간줄이 뜰 수 있다. 이는 오류는 아니고 warning의 일종인데 VSCode의 설정때문에 나타나는 문제이다. 
 
 <img src = "/image/Error/react_mobx_decorator_error/vscode_setting_error.png" >
 
-빨간줄이 뜨는 부분에 커서를 가져가면 다음과 같이 experimentaldecorators설정을 바꾸면 해결된다고 뜨는데 시키는 대로 하면 된다.
+빨간줄이 뜨는 부분에 커서를 가져가면 experimentaldecorators설정을 바꾸면 해결된다고 뜨는데 시키는 대로 하면 된다.
 
-왼쪽 상단의 `파일>기본설정>설정`에서 experimentaldecorators를 검색하면 체크박스가 비어있는것을 볼 수 있는데 이부분을 체크하면 바뀐 설정이 적용되며 빨간줄이 사라지는 것을 볼 수 있다.
+왼쪽 상단의 `파일>기본설정>설정`에서 experimentaldecorators를 검색하면 체크박스가 비어있는것을 볼 수 있는데 이부분을 체크하면 바뀐 설정이 적용되며 빨간줄이 사라지는 것을 볼 수 있다. (해당 화면은 VSCode의 버전에 따라 다르게 보일 수 있습니다.)
 
 <img src = "/image/Error/react_mobx_decorator_error/vscode_setting_error2.png">
 
