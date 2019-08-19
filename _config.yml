@@ -65,6 +65,9 @@ descriptions:
   - cat: React
     desc: "Posts describing React."
 
+  - cat: Java
+    desc: "Posts describing Java."
+
   - cat: Git
     desc: "Posts describing Git."
 
